@@ -515,7 +515,7 @@ yargs(hideBin(process.argv))
         .option("host", {
           describe: "Host of the review environment",
           type: "string",
-          default: "review.mdn.allizom.net",
+          default: "review-mdn-allizom-net.gha.quest",
         })
         .option("repo", {
           describe: "Name of the repo (e.g. mdn/content)",
