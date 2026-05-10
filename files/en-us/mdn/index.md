@@ -5,6 +5,8 @@ page-type: landing-page
 sidebar: mdnsidebar
 ---
 
+**AHA, welcome!**
+
 **MDN Web Docs** is a free-to-use resource that documents open web technologies.
 Our mission is to provide developers with the information they need to easily build projects on the web platform.
 The resources below describe how the site works, how we write documentation, the guidelines and conventions we follow, and how you can get involved.
