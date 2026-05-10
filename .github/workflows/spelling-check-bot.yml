@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   sync:
-    if: github.repository == 'mdn/content'
+    if: github.repository == 'gh-actions-testing/content-clone'
     runs-on: ubuntu-latest
     permissions:
       issues: write

@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   tests:
-    if: github.repository == 'mdn/content'
+    if: github.repository == 'gh-actions-testing/content-clone'
     runs-on: ubuntu-latest
     env:
       BASE_SHA: ${{ github.event.pull_request.base.sha }}

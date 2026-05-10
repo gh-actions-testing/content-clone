@@ -10,7 +10,7 @@ permissions: {}
 
 jobs:
   check_url_issues:
-    #if: github.repository == 'mdn/content'
+    #if: github.repository == 'gh-actions-testing/content-clone'
     runs-on: ubuntu-latest
 
     steps:
