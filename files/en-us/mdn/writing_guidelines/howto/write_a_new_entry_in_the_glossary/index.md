@@ -6,6 +6,8 @@ page-type: mdn-writing-guide
 sidebar: mdnsidebar
 ---
 
+_Touched by me._
+
 This article explains how to add and link to entries in the [MDN Web Docs glossary](/en-US/docs/Glossary).
 It also provides guidelines about glossary entry layout and content.
 The glossary provides definitions for all the terms, jargon, abbreviations, and acronyms you'll come across when reading MDN content about the web and web development.
