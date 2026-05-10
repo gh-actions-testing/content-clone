@@ -39,14 +39,18 @@ jobs:
       - name: Identify PR
         id: identify-pr
         run: |
+          # hard-code PR for my tests
           # XXX unreliable in my tests
           # PR_NUMBER=$(gh api "repos/$HEAD_REPO/commits/$HEAD_SHA/pulls" --jq ".[] | select(.base.repo.full_name == \"$BASE_REPO\") | .number")
-          echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          # echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          # XXX hard-code for my tests
+          echo "number=3" >> $GITHUB_OUTPUT
         env:
           BASE_REPO: ${{ github.repository }}
           GITHUB_TOKEN: ${{ github.token }}
           HEAD_REPO: ${{ github.event.workflow_run.head_repository.full_name }}
           HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          # ah, this is emmpty when trigerred by fork PR
           PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
 
   review:
